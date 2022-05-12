@@ -1,0 +1,32 @@
+{
+  "name": "toCfe-constants",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "father build"
+  },
+  "keywords": [],
+  "author": "toCfe",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.16.5"
+  },
+  "devDependencies": {
+    "father-build": "1.20.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toCfe/toCfe"
+  },
+  "files": [
+    "es",
+    "lib",
+    "package.json",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

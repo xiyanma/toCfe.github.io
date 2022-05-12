@@ -1,0 +1,17 @@
+{
+  "name": "toCfe-utils",
+  "version": "2.0.4",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "father build"
+  },
+  "author": "toCfe",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.16.5",
+    "moment": "^2.29.1",
+    "toCfe-constants": "^0.0.1"
+  }
+}
