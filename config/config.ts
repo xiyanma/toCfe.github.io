@@ -5,11 +5,18 @@ export default defineConfig({
   title: "sr-components",
   favicon: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
   logo: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
-  outputPath: "docs-dist",
-  publicPath: "./",
+  // outputPath: "docs-dist",
+  // publicPath: "./",
+  dynamicImport: {},
+  manifest: {},
+  hash: true,
   mode: "site",
   resolve: {
-    includes: ["docs", "packages/*"],
+    includes: ["docs", "packages/constants/src", "packages/utils/src"],
+  },
+  nodeModulesTransform: {
+    type: "none",
+    exclude: [],
   },
   navs: [
     {

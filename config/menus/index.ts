@@ -5,16 +5,18 @@ export default {
       path: "/guide",
     },
   ],
-  "/utils": [
+  '/constants': [
     {
-      title: "utils",
-      path: "/utils/index",
+      title: "layout",
+      children: [
+        'layout/doc/index'
+      ]
     },
-  ],
-  constants: [
     {
-      title: "constants",
-      path: "/constants/index",
+      title: "time",
+      children: [
+        'time/doc/index'
+      ]
     },
   ],
 };
