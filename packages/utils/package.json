@@ -1,6 +1,6 @@
 {
-  "name": "toCfe-utils",
-  "version": "2.0.4",
+  "name": "tocfe-utils",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
