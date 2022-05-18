@@ -12,6 +12,6 @@
   "dependencies": {
     "@babel/runtime": "^7.16.5",
     "moment": "^2.29.1",
-    "toCfe-constants": "^0.0.1"
+    "tocfe-constants": "^0.0.1"
   }
 }
