@@ -1,4 +1,4 @@
-import { DEFAULT_DATETIME_FORMAT } from "toCfe-constants";
+import { DEFAULT_DATETIME_FORMAT } from "tocfe-constants";
 import moment from "moment";
 
 /**
@@ -11,7 +11,7 @@ const formatTime = (
   time?: string | number,
   format = DEFAULT_DATETIME_FORMAT
 ) => {
-  return moment(time).format(format);
+  return moment(time).format(format)
 };
 
 export default formatTime;
