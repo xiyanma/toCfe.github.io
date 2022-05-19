@@ -14,4 +14,4 @@ export const SPAN_1 = {
 };
 ```
 <br/>
-<code src="../demo/index.tsx" />
+<code src="../demos/index.tsx" />
