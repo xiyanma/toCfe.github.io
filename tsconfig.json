@@ -19,6 +19,7 @@
     "**/__tests__",
     "**/__test__",
     "**/demo",
-    "packages"
+    "packages",
+    "docs-dist",
   ]
 }

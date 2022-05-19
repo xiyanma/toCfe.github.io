@@ -5,15 +5,25 @@ export default defineConfig({
   title: "sr-components",
   favicon: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
   logo: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
-  // outputPath: "docs-dist",
-  // publicPath: "./",
+  outputPath: "docs-dist",
   dynamicImport: {},
+  exportStatic: {},
   manifest: {},
-  hash: true,
   mode: "site",
   resolve: {
     includes: ["docs", "packages/constants/src", "packages/utils/src"],
   },
+  extraBabelPlugins: [
+    [
+      "babel-plugin-import",
+      {
+        libraryName: "antd",
+        libraryDirectory: "es",
+        style: true,
+      },
+      "antd",
+    ],
+  ],
   nodeModulesTransform: {
     type: "none",
     exclude: [],

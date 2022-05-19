@@ -9,7 +9,8 @@ export default {
     {
       title: "layout",
       children: [
-        'layout/doc/index'
+        'layout/doc/index.md',
+        'layout/doc/Form',
       ]
     },
     {

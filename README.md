@@ -26,9 +26,9 @@ $ npm run build
 
 ### 关于贡献代码
 
-1. `fork toCfe/components`
+1. `fork tocfe/components`
 2. update files
-3. pr to toCfe/components
+3. pr to tocfe/components
 4. other review and merged
 5. lerna publish
 
