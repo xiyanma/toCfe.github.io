@@ -6,10 +6,27 @@ export default defineConfig({
   favicon: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
   logo: "https://retail.gtimg.com/sr_mms_test/favicon.ico",
   outputPath: "docs-dist",
-  publicPath: "./",
+  dynamicImport: {},
+  exportStatic: {},
+  manifest: {},
   mode: "site",
   resolve: {
-    includes: ["docs", "packages/*"],
+    includes: ["docs", "packages/constants/src", "packages/utils/src"],
+  },
+  extraBabelPlugins: [
+    [
+      "babel-plugin-import",
+      {
+        libraryName: "antd",
+        libraryDirectory: "es",
+        style: true,
+      },
+      "antd",
+    ],
+  ],
+  nodeModulesTransform: {
+    type: "none",
+    exclude: [],
   },
   navs: [
     {

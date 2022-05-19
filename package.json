@@ -3,7 +3,7 @@
   "name": "toCfe",
   "scripts": {
     "start": "dumi dev",
-    "docs:build": "dumi build",
+    "docs:build": "cross-env dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
@@ -28,6 +28,7 @@
     ]
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "moment": "^2.29.1",
     "react": "^16.12.0 || ^17.0.0"
   },
@@ -37,6 +38,7 @@
     "@types/jest": "^27.0.3",
     "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
+    "babel-plugin-import": "^1.13.5",
     "dumi": "^1.1.7",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "tocfe-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/runtime": "^7.16.5",
     "moment": "^2.29.1",
-    "toCfe-constants": "^0.0.1"
-  }
+    "tocfe-constants": "^0.0.1"
+  },
+  "gitHead": "e5e127d626a4839d6cfbca7b51c9f217f48f0322"
 }
