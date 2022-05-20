@@ -4,13 +4,14 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "father build"
   },
   "author": "toCfe",
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.16.5",
+    "mathjs": "^10.5.3",
     "moment": "^2.29.1",
     "tocfe-constants": "^0.0.2"
   },

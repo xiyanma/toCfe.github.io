@@ -1,12 +1,12 @@
 ## 如何在项目中安装、使用
 
-1.  例如想在 srOmsWeb 中使用【时间戳转 YYYY-MM-DD HH:mm:ss】通用方法
+1.  例如想在 A 中使用【时间戳转 YYYY-MM-DD HH:mm:ss】通用方法
 
 ```js
-// 在oms中安装依赖
-tnpm i @tentcent/sr-utils
+// 在项目中安装依赖
+npm i tocfe-utils
 // 在项目中使用
-import { formateTime2seconds } from '@tencent/sr-utils';
+import { formateTime2seconds } from 'tocfe-utils';
 formateTime2seconds(time)
 ```
 
