@@ -1,5 +1,6 @@
 - [Getting Started](#getting-started)
 - [关于贡献代码](#关于贡献代码)
+  - [测试用例](#测试用例)
 - [关于贡献文档](#关于贡献文档)
   - [新增组件后修改文档步骤示例](#新增组件后修改文档步骤示例)
 - [关于发版](#关于发版)
@@ -39,6 +40,10 @@ npm run deploy
 3. 提交到 github 后提 pr 到[源仓库](https://github.com/toCfe/toCfe.github.io)
 4. 分配其他人 review 和合代码
 5. 去源仓库`lerna run publish`发布到 npm
+
+#### 测试用例
+
+1. 原则上是逻辑计算类的公共方法都需要写测试用例
 
 ### 关于贡献文档
 

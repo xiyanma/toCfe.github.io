@@ -7,11 +7,6 @@ import moment from "moment";
  * @param {*} [format=DEFAULT_DATETIME_FORMAT] 转换成的格式[YYYY-MM-DD HH:mm:ss]
  * @return {*}
  */
-const formatTime = (
-  time?: string | number,
-  format = DEFAULT_DATETIME_FORMAT
-) => {
-  return moment(time).format(format)
+export const formatTime = (time?: string | number, format = DEFAULT_DATETIME_FORMAT) => {
+  return moment(time).format(format);
 };
-
-export default formatTime;

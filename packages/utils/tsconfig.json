@@ -3,5 +3,5 @@
   "compilerOptions": {
     "rootDir": "src"
   },
-  "exclude": ["es", "lib"]
+  "exclude": ["es", "lib", "**/__tests__"]
 }
