@@ -19,7 +19,7 @@
   "vendors~wrappers.css": "/vendors~wrappers.chunk.css",
   "vendors~wrappers.js": "/vendors~wrappers.js",
   "wrappers.js": "/wrappers.js",
-  "/~demos/layout-demo/index.html": "//~demos/layout-demo/index.html",
+  "/~demos/layout-demos/index.html": "//~demos/layout-demos/index.html",
   "404.html": "/404.html",
   "_demos/:uuid/index.html": "/_demos/:uuid/index.html",
   "constants/index.html": "/constants/index.html",
