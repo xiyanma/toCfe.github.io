@@ -150,7 +150,7 @@ export const FORM_LAYOUT_1_11 = {
  * xl  屏幕>=1200px   3
  * xxl 屏幕>=1600px   4
  */
-export const RES_LAYOUT = {
+export const COL_RES_LAYOUT = {
   xs: SPAN_24,
   sm: SPAN_12,
   md: SPAN_12,
@@ -158,3 +158,16 @@ export const RES_LAYOUT = {
   xl: SPAN_8,
   xxl: SPAN_6,
 };
+
+// === gutter ===
+export const ROW_GUTTER_12 = {
+  gutter: 12
+}
+
+export const ROW_GUTTER_24 = {
+  gutter: 24
+}
+
+export const ROW_GUTTER_48 = {
+  gutter: 48
+}
