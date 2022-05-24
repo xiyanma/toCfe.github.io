@@ -1,6 +1,6 @@
 import moment from "moment";
 import React from "react";
-import { DEFAULT_DATETIME_FORMAT, DEFAULT_DATE_FORMAT, DEFAULT_TIME_FORMAT } from "../time";
+import { DEFAULT_DATETIME_FORMAT, DEFAULT_DATE_FORMAT, DEFAULT_TIME_FORMAT } from "..";
 
 const index = () => {
   return (
