@@ -1,3 +1,3 @@
-export * from './layout/index';
+export * from './layout';
 
-export * from "./time/time";
+export * from "./time";

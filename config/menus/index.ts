@@ -5,19 +5,20 @@ export default {
       path: "/guide",
     },
   ],
-  '/constants': [
+  "/constants": [
     {
       title: "layout",
-      children: [
-        'layout/doc/index.md',
-        'layout/doc/Form',
-      ]
+      children: ["layout/index"],
     },
     {
       title: "time",
-      children: [
-        'time/doc/index'
-      ]
+      children: ["time/index"],
+    },
+  ],
+  "/utils": [
+    {
+      title: "math",
+      children: ["math/index"],
     },
   ],
 };
