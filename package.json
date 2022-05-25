@@ -1,25 +1,22 @@
 {
-  "private": true,
   "name": "toCfe",
-  "scripts": {
-    "start": "dumi dev",
-    "docs:build": "cross-env dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father-build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build",
-    "clean": "lerna clean --yes",
-    "begin": "find . -maxdepth 3 -name node_modules -type d -exec rm -rf {} + && cnpm install && npm run build && lerna bootstrap",
-    "lint-staged:js": "eslint --no-ignore --ext .js,.jsx,.ts,.tsx",
-    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./packages"
-  },
+  "private": true,
   "module": "es/index.js",
   "typings": "es/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "scripts": {
+    "begin": "find . -maxdepth 3 -name node_modules -type d -exec rm -rf {} + && npm install && lerna bootstrap && npm run build && npm run start",
+    "build": "father-build",
+    "clean": "lerna clean --yes",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "docs:build": "cross-env dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "lint-staged:js": "eslint --no-ignore --ext .js,.jsx,.ts,.tsx",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./packages",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "start": "dumi dev",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
   },
   "husky": {
     "hooks": {
@@ -43,12 +40,17 @@
     "react": "^16.12.0 || ^17.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-typescript": "^7.17.12",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
     "@umijs/fabric": "^2.10.2",
     "@umijs/test": "^3.0.5",
+    "babel-jest": "^28.1.0",
     "babel-plugin-import": "^1.13.5",
+    "babel-preset-env": "^1.7.0",
     "dumi": "^1.1.7",
     "eslint": "^8.15.0",
     "father-build": "^1.17.2",
@@ -58,11 +60,9 @@
     "lerna": "^4.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "yorkie": "^2.0.0",
-    "@babel/core": "^7.18.0",
-    "@babel/preset-env": "^7.18.0",
-    "@babel/preset-typescript": "^7.17.12",
-    "babel-jest": "^28.1.0",
-    "babel-preset-env": "^1.7.0"
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
